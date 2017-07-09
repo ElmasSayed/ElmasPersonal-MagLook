@@ -3,7 +3,7 @@ module.exports = function(sequelize, DataTypes) {
     url: {
       type: DataTypes.TEXT,
       allowNull: false,
-      unique: true,
+      unique: false,
       validate: {
         len: [1]
       }

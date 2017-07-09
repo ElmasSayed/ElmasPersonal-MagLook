@@ -1,26 +1,21 @@
 var express = require("express");
-
 var router = express.Router();
-
 var db = require("../models");
 var request = require('request');
 var fs = require("fs");
 var _ = require('underscore');
-let NewsAPI = require('newsapi');
+var helpers = require('handlebars-helpers')();
 
+let NewsAPI = require('newsapi');
 let newsapi = new NewsAPI('31a06e480ed04534bc2eda6adfb8fc5f');
 
-
-var helpers = require('handlebars-helpers')();
 module.exports = function(app) {
-
-
 
     newsapi.articles({
         source: 'entertainment-weekly', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -38,7 +33,7 @@ module.exports = function(app) {
         source: 'mtv-news', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -56,7 +51,7 @@ module.exports = function(app) {
         source: 'cnn', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -73,7 +68,7 @@ module.exports = function(app) {
         source: 'the-new-york-times', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -90,7 +85,7 @@ module.exports = function(app) {
         source: 'espn', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -106,7 +101,7 @@ module.exports = function(app) {
         source: 'fox-sports', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -122,7 +117,7 @@ module.exports = function(app) {
         source: 'techcrunch', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
@@ -139,7 +134,7 @@ module.exports = function(app) {
         source: 'engadget', // required 
         sortBy: 'top' // optional 
     }).then(articlesResponse => {
-        console.log(articlesResponse);
+        // console.log(articlesResponse);
 
 
         articlesResponse.articles.forEach(el => {
