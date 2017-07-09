@@ -1,0 +1,39 @@
+
+<div class="container">
+        <div class="container-fluid">
+            <div class="row subject-page-title">{{pageTitle}}</div>
+            <div class="row">
+   
+            {{#each articles}}                        
+                        <div id="article" class="subject-article-box animated ">
+                            <a href= "{{this.url}}" target="_blank" class="subject-article-link">
+                                <img src= "{{this.image_url}}" class="subject-article-img">
+                                <p class="subject-article-description">{{this.description}}</p> 
+                            </a>
+                            <div class="subject-article-like-box"  >
+                                <a href="/like/{{id}}">
+                                <form action="/users/" method="POST">
+
+                                    <img action="/likes/" method="POST" class="subject-article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>
+                                    
+                                </a>
+                            </div>  
+                        </div> 
+              {{/each}}   
+    </div>
+</div>
+ 
+                {{!--<div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#">Logo</a>
+                        </li>
+                        <li>
+                            <a href="#">MagLook</a>
+                        </li>
+                        <li class="dropdown pull-right">
+                            <a href="#">SignUp/Login</a>
+                        </li>
+                    </ul>
+                </div>--}}
+   

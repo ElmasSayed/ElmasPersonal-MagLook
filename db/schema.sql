@@ -1,0 +1,2 @@
+CREATE DATABASE SequelizedMagLookExample;
+USE SequelizedMagLookExample;

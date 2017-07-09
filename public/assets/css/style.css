@@ -1,0 +1,56 @@
+/*body{
+	background-color:black;
+	color: white;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: red;
+}
+
+element.style {
+	height: 350px
+	
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: red;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+*/
+
+body {
+  font-size: 12px;
+  background-color: black;
+}
+
+#article {
+    width: 375px;
+    height: 235px;
+    float: left;
+    padding: 10px
+
+}
+
+#article:nth-child(3):after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+}

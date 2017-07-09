@@ -1,0 +1,145 @@
+	
+	<div class="container">
+
+		<!--- TECHNOLOGY --->
+
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<a href="/tech">
+					<h3 class="category-title">Technology</h3>
+				</a>
+				{{#each techArticles}}
+				<div class="article-box "> <!-- onmouseover="changeSize();" onmouseout="changeSizeBack();" -->
+					<div class="article">
+						<div align="left" valign="top">
+							<a  href="{{this.url}}" target="_blank">
+								<div>
+									<img class="article-img" src="{{this.image_url}}" alt=""/><br/>
+								    <div class="article-description">
+									    {{this.description}}<span class="article-readmore"> read more »</span>
+								    </div>
+       							</div>
+       						</a>
+       					</div>
+						
+					</div>
+					
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12 article-like-box">
+							<a href="/like/{{id}}">
+<!-- 								{{!--<img class="article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>--}}
+								<img class="article-like" src="http://images.clipartpanda.com/heart-outline-clipart-black-and-white-xTgKexzBc.svg"/> -->
+                                    <img action="/likes/" method="POST" class="subject-article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>																
+							</a>	
+				</div>
+
+				{{/each}} 
+		</div>
+
+		<!-- NEWS -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<a href="/news">
+					<h3 class="category-title">News</h3>
+				</a>
+				{{#each newsArticles}}
+				<div class="article-box"> <!-- onmouseover="changeSize();" onmouseout="changeSizeBack();" -->
+					<div class="article">
+						<div align="left" valign="top">
+							<a  href="{{this.url}}" target="_blank">
+								<div>
+									<img class="article-img" src="{{this.image_url}}" alt=""/><br/>
+								    <div class="article-description">
+									    {{this.description}}<span class="article-readmore"> read more »</span>
+								    </div>
+       							</div>
+       						</a>
+       					</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12 article-like-box">
+							<a href="/like/{{id}}">
+								<img class="article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>
+							</a>	
+				</div>
+
+				{{/each}} 
+		</div>
+
+
+		<!-- CELEBRITY-->	
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<a href="/celebrities"><h3 class="category-title">Celebrities</h3></a>
+				{{#each celebArticles}}
+				<div class="article-box"> <!-- onmouseover="changeSize();" onmouseout="changeSizeBack();" -->
+					<div class="article">
+						<div align="left" valign="top">
+							<a  href="{{this.url}}" target="_blank">
+								<div>
+									<img class="article-img" src="{{this.image_url}}" alt=""/><br/>
+								    <div class="article-description">
+									    {{this.description}}<span class="article-readmore"> read more »</span>
+								    </div>
+       							</div>
+       						</a>
+       					</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12 article-like-box">
+							<a href="/like/{{id}}">
+								<img class="article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>
+							</a>	
+				</div>
+
+				{{/each}}
+		</div>
+		
+		<!-- SPORTS -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<a href="/sports">
+					<h3 class="category-title">Sports</h3>
+				</a>
+				{{#each sportArticles}}
+				<div class="article-box"> <!-- onmouseover="changeSize();" onmouseout="changeSizeBack();" -->
+					<div class="article">
+						<div align="left" valign="top">
+							<a  href="{{this.url}}" target="_blank">
+								<div>
+									<img class="article-img" src="{{this.image_url}}" alt=""/><br/>
+								    <div class="article-description">
+									    {{this.description}}<span class="article-readmore"> read more »</span>
+								    </div>
+       							</div>
+       						</a>
+       					</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12 article-like-box">
+							<a href="/like/{{id}}">
+								<img class="article-like" src="http://www.freeiconspng.com/uploads/heart-png-15.png"/>
+							</a>	
+				</div>
+				{{/each}} 
+		</div>
+
+	</div>
+	
+	<!-- Find more -->
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+		<a href="/tech"><p class="find-more">Find More</p></a>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+		<a href="/news"><p class="find-more">Find More</p></a>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+		<a href="/celebrities"><p class="find-more">Find More</p></a>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+		<a href="/sports"><p class="find-more">Find More</p></a>
+	</div>
+
+	<!-- Footer -->
+	<div class=" row container-fluid">
+		<div class="col-md-12 footer">Ana Elmas Rick and Vince</div>
+	</div>
